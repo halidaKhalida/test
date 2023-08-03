@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:background="@drawable/gon1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Тест по Арабскому языку"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:id="@+id/ll_result"
+        android:layout_width="120dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/oval"
+        android:layout_below="@id/tv_test"
+        android:layout_marginLeft="140dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="120dp">
+        <TextView
+            android:id="@+id/tv_kolichestvo"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0/10"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_below="@id/ll_result"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="1. Переведите данные слова  ,, السلام عليك ,, на русский язык."/>
+    <RadioButton
+        android:id="@+id/rb_variant1"
+        android:layout_below="@id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingRight="20dp"
+        android:layout_height="wrap_content"
+        android:text="Мир вам"/>
+    <RadioButton
+        android:id="@+id/rb_variant2"
+        android:layout_below="@id/rb_variant1"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:paddingRight="20dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Как у вас дела?"/>
+    <RadioButton
+        android:id="@+id/rb_variant3"
+        android:layout_below="@id/rb_variant2"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingRight="20dp"
+        android:layout_height="wrap_content"
+        android:text="Удачного дня"/>
+    <RadioButton
+        android:id="@+id/rb_variant4"
+        android:layout_below="@id/rb_variant3"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingRight="20dp"
+        android:layout_height="wrap_content"
+        android:text="Здравствуйте"/>
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_below="@id/rb_variant4"
+        android:layout_marginTop="80dp"
+        android:layout_width="150dp"
+        android:text="Next"
+        android:background="@drawable/linebuttom"
+        android:textSize="20sp"
+        app:backgroundTint="@null"
+        android:layout_marginLeft="125dp"
+        android:layout_height="57dp"/>
+
+
+
+
+
+
+
+</RelativeLayout>
